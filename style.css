@@ -1,21 +1,26 @@
 @font-face {
-  src: url("Inter-Bold.otf");
+  src: url("fonts/Inter-Bold.otf");
   font-family: Inter-Bold;
 }
 
 @font-face {
-  src: url("Inter-Medium.otf");
+  src: url("fonts/Inter-Medium.otf");
   font-family: Inter-Medium;
 }
 
 @font-face {
-  src: url("Inter-Regular.otf");
+  src: url("fonts/Inter-Regular.otf");
   font-family: Inter-Regular;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .topNaviagationBarContainer {
@@ -27,10 +32,15 @@ body {
   background-color: white;
   width: 100%;
   max-width: 600px;
+  border-bottom: 1px solid black;
+}
+
+.headerText {
+  padding-left: 16px;
 }
 
 .websiteContainer {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   text-align: left;
 }
@@ -39,18 +49,80 @@ body {
   padding-top: 80px;
 }
 
+.contentPositioning {
+  padding-bottom: 64px;
+}
+
 .contentContainer {
-  padding-bottom: 40px;
+  height: auto;
+  display: block;
+  border: 1px solid black;
 }
 
 .contentCoverImage {
   width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .contentContainerTitle {
-  font-family: Inter-Medium;
+  font-family: Inter-Semibold;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .contentContainerDescription {
   font-family: Inter-Regular;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.buttonsContainer {
+  padding-left: 24px;
+  padding-right: 20px;
+  padding-bottom: 36px;
+}
+
+.buttonUnitContainer {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding-left:16px;
+  padding-right:16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Inter-Semibold;
+  letter-spacing: -0.6px;
+  color: black;
+  text-align: left;
+}
+
+.buttonUnitContainer:hover {
+  color: white;
+  background-color: black;
+}
+
+.articlePageTitle {
+  margin: 0;
+  font-size: 56px;
+  font-family: Inter-Semibold;
+  letter-spacing: -4px;
+}
+.articlePageBody {
+  font-size: 16px;
+  font-family: Inter-Regular;
+  letter-spacing: -0.8px;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+  }
 }
