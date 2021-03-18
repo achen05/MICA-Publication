@@ -1,0 +1,56 @@
+@font-face {
+  src: url("Inter-Bold.otf");
+  font-family: Inter-Bold;
+}
+
+@font-face {
+  src: url("Inter-Medium.otf");
+  font-family: Inter-Medium;
+}
+
+@font-face {
+  src: url("Inter-Regular.otf");
+  font-family: Inter-Regular;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topNaviagationBarContainer {
+  text-align: left;
+  font-family: Inter-Bold;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+.websiteContainer {
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.websiteBodyContainer {
+  padding-top: 80px;
+}
+
+.contentContainer {
+  padding-bottom: 40px;
+}
+
+.contentCoverImage {
+  width: 100%;
+}
+
+.contentContainerTitle {
+  font-family: Inter-Medium;
+}
+
+.contentContainerDescription {
+  font-family: Inter-Regular;
+}
