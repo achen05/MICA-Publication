@@ -26,6 +26,7 @@ body {
 p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .topNaviagationBarContainer {
@@ -37,11 +38,13 @@ p {
   background-color: white;
   width: 100%;
   max-width: 600px;
+  height: 64px;
   border-bottom: 1px solid black;
+  top: 0px;
 }
 
 .headerText {
-  padding-left: 16px;
+  padding-left: 20px;
   cursor: pointer;
 }
 
@@ -52,7 +55,7 @@ p {
 }
 
 .websiteBodyContainer {
-  padding-top: 80px;
+  padding-top: 64px;
 }
 
 .contentPositioning {
@@ -78,6 +81,13 @@ p {
   padding-top: 8px;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.contentContainerCreator {
+  font-family: Inter-Regular;
+  padding-left: 16px;
+  padding-right: 16px;
+
 }
 
 .contentContainerDescription {
@@ -119,11 +129,14 @@ p {
   font-size: 56px;
   font-family: Inter-Semibold;
   letter-spacing: -4px;
+  padding-left: 16px;
 }
 .articlePageBody {
   font-size: 16px;
   font-family: Inter-Regular;
   letter-spacing: -0.8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (max-width: 600px) {
