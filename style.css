@@ -30,20 +30,29 @@ p {
 }
 
 .topNaviagationBarContainer {
-  text-align: left;
-  font-family: Inter-Bold;
-  font-size: 20px;
-  letter-spacing: -0.6px;
-  position: fixed;
-  background-color: white;
   width: 100%;
-  max-width: 600px;
-  height: 64px;
+  position: sticky;
   top: 0px;
+  height: 72px;
+  background-color: white;
+
 }
 
-.headerText {
+.logo {
+  padding-top: 20px;
+  width: 72px;
+
+
+}
+
+.headerTextButton {
   cursor: pointer;
+  float: right;
+  font-family: Inter-Regular;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  padding-top: 8px;
+  padding-right: 8px;
 }
 
 .websiteContainer {
@@ -53,12 +62,12 @@ p {
 }
 
 .websiteBodyContainer {
-  padding-top: 80px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .contentPositioning {
+  padding-top: 24px;
   padding-bottom: 64px;
 }
 
@@ -72,7 +81,7 @@ p {
 }
 
 .contentContainerTitle {
-  font-family: Inter-SemiBold;
+  font-family: Inter-Medium;
   font-size: 40px;
   letter-spacing: -1px;
   margin: 0;
