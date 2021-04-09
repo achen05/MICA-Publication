@@ -18,6 +18,21 @@
   font-family: Inter-Regular;
 }
 
+@font-face {
+  src: url("fonts/Inter-Light.otf");
+  font-family: Inter-Light;
+}
+
+@font-face {
+  src: url("fonts/Mister Pixel Regular.otf");
+  font-family: MisterPixel
+}
+
+@font-face {
+  src: url("fonts/LiberationSerif-Regular");
+  font-family: LiberationSerif-Regular;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,36 +44,83 @@ p {
   hyphens: auto;
 }
 
-.topNaviagationBarContainer {
+.topHeaderBarContainer {
   width: 100%;
   position: sticky;
   top: 0px;
-  height: 72px;
+  height: 56px;
   background-color: white;
-
+  border-bottom: 1px solid black;
+  z-index: 2;
 }
 
-.logo {
+.topNavigationBarContainer {
+  width: 100%;
+  position: sticky;
+  top: 57px;
+  height: auto;
+  background-color: white;
+  border-bottom: 1px solid black;
+  z-index: 2;
+}
+
+.topIssueIndicator {
+  width: 100%;
+  position: sticky;
+  top: 57px;
+  height: 32px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  font-family: MisterPixel;
+  z-index: 1;
+}
+
+
+.logoLetterType {
+  display: block;
+  position: static;
+  font-family: MisterPixel;
+  font-size: 24px;
+  letter-spacing: -1px;
   padding-top: 20px;
-  width: 72px;
-
+  width: auto;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 
 }
 
-.headerTextButton {
+
+.topNavigationTextButton {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 2px;
   cursor: pointer;
-  float: right;
-  font-family: Inter-Regular;
+  font-family: MisterPixel;
   font-size: 16px;
   letter-spacing: -0.6px;
-  padding-top: 8px;
-  padding-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  color: black;
+  border: 1px solid black;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.topNavigationTextButton:hover {
+  color: white;
+  background-color: black;
 }
 
 .websiteContainer {
   width: 100%;
   max-width: 600px;
   text-align: left;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .websiteBodyContainer {
@@ -67,36 +129,45 @@ p {
 }
 
 .contentPositioning {
-  padding-top: 24px;
-  padding-bottom: 64px;
+  padding-bottom: 100px;
 }
 
 .contentContainer {
+  padding-top: 20px;
   height: auto;
   display: block;
+  border-bottom: 1px solid black;
 }
 
 .contentCoverImage {
   width: 100%;
+  object-fit: cover;
+  height: 300px;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid black;
 }
 
 .contentContainerTitle {
-  font-family: Inter-Medium;
-  font-size: 40px;
-  letter-spacing: -1px;
+  font-family: LiberationSerif-Regular;
+  font-size: 36px;
+  letter-spacing: 0px;
   margin: 0;
   padding-top: 8px;
-  line-height: 44px;
+  line-height: 40px;
 }
 
 .contentContainerCreator {
-  font-family: Inter-Regular;
+  font-family: LiberationSerif-Regular;
+  line-height: 24px;
 
 }
 
 .contentContainerDescription {
-  font-family: Inter-Regular;
+  font-family: LiberationSerif-Regular;
   padding-bottom: 20px;
+  line-height: 24px;
 
 }
 
@@ -112,8 +183,8 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
-  font-size: 16px;
-  font-family: Inter-Semibold;
+  font-size: 20px;
+  font-family: MisterPixel;
   letter-spacing: -0.6px;
   color: black;
   text-align: left;
@@ -127,26 +198,41 @@ p {
 .articlePageTitle {
   margin: 0;
   font-size: 56px;
-  font-family: Inter-Semibold;
-  letter-spacing: -3px;
+  font-family: LiberationSerif-Regular;
+  letter-spacing: 0px;
   padding-top: 8px;
   padding-bottom: 8px;
   line-height: 60px;
 }
 
 .articlePageAuthor {
-  font-family: Inter-Regular;
+  font-family: LiberationSerif-Regular;
   padding-bottom: 16px;
 }
 
 .articlePageBody {
-  font-family: Inter-Regular;
+  font-family: LiberationSerif-Regular;
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 64px;
 }
 
+.informationHeader {
+  font-family: MisterPixel;
+  font-size: 36px;
+}
+
+.informationBody {
+  font-size: 18px;
+}
+
+
 @media screen and (max-width: 600px) {
+  .websiteContainer {
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+  }
+
   .contentContainer {
     border-left: 0px solid black;
     border-right: 0px solid black;
